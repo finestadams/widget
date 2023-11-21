@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "BR Firma Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: local("/brfirma-regular"), url("/brfirma-regular") format("woff");
+}
+
+@font-face {
+    font-family: "BR Firma Medium";
+    font-style: normal;
+    font-weight: 800;
+    src: local("/brfirma-bold"), url("/brfirma-medium") format("woff2");
+}
+
+@font-face {
+    font-family: "BR Firma SemiBold";
+    font-style: normal;
+    font-weight: 800;
+    src: local("/brfirma-semi"), url("/brfirma-semi") format("woff2");
+}
+
+@font-face {
+    font-family: "BR Firma Bold";
+    font-style: normal;
+    font-weight: 800;
+    src: local("/brfirma-bold"), url("/brfirma-bold") format("woff2");
+}

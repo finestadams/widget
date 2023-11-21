@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="cta">
+    <button data-easol="click">Click me</button>
+    <button data-easol="mouseover">Hover me</button>
+  </div>
+  <script src="../dist/widget.js"></script>
+  <script type="text/javascript">
+    // Please set your platform ID
+    new Lenkie({
+      platformId: '89151f3e-354c-4a1a-9e70-0c57341f88d3',
+      sellerId: '4e1482e4-c6f2-4bdd-88d8-efb34aa6ecae',
+      displayTopBanner: true,
+      dataAttrLabel: 'easol',
+      platformName: 'Easol Capital'
+    });
+  </script>
+
+  <style>
+    #cta {
+      margin-top: 3rem;
+    }
+
+    #cta>button {}
+  </style>
+</body>
+
+</html>

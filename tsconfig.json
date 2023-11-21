@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "downlevelIteration": true,
+    "baseUrl": "./src",
+    "paths": {
+      "~*": ["./*"]
+    },
+    "target": "es5",
+    "lib": ["es6", "DOM"]
+  },
+  "include": ["src/**/*"],
+}

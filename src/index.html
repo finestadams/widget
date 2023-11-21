@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="cta">
+        <button data-lenkify="click">Click me</button>
+        <button data-lenkify="mouseover">Hover me</button>
+    </div>
+    <script src="./js/widget.ts"></script>
+    <script type="text/javascript">
+        // Please set your platform ID
+        new Lenkie({
+            platformId: '89151f3e-354c-4a1a-9e70-0c57341f88d3',
+            sellerId: '4e1482e4-c6f2-4bdd-88d8-efb34aa6ecae',
+            displayTopBanner: true,
+            dataAttrLabel: 'lenkify',
+            platformName: 'Lenkify Capital',
+            text: {
+                caption: "🚀 Scale your business with a cash advance from Lenkify",
+                cta: "check offers available to you in a giffy",
+            },
+            theme: {
+                primaryColor: "#1a2d5b",
+                secondaryColor: "#f5a623",
+                underlineColor: "rgba(156, 163, 175, 0.5);",
+            }
+        });
+    </script>
+
+    <style>
+        #cta {
+            margin-top: 3rem;
+        }
+    </style>
+</body>
+
+</html>

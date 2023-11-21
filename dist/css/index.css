@@ -1,0 +1,457 @@
+@font-face {
+    font-family: "BR Firma Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://lenkie-assets.s3.eu-west-1.amazonaws.com/prequalification-widget/fonts/brfirma-regular.woff2") format("woff");
+}
+
+@font-face {
+    font-family: "BR Firma Medium";
+    font-style: normal;
+    font-weight: 800;
+    src: url("https://lenkie-assets.s3.eu-west-1.amazonaws.com/prequalification-widget/fonts/brfirma-medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "BR Firma SemiBold";
+    font-style: normal;
+    font-weight: 800;
+    src: url("https://lenkie-assets.s3.eu-west-1.amazonaws.com/prequalification-widget/fonts/brfirma-semibold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "BR Firma Bold";
+    font-style: normal;
+    font-weight: 800;
+    src: url("https://lenkie-assets.s3.eu-west-1.amazonaws.com/prequalification-widget/fonts/brfirma-bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "BR Firma Light";
+    font-style: normal;
+    font-weight: normal;
+    src: url("https://lenkie-assets.s3.eu-west-1.amazonaws.com/prequalification-widget/fonts/brfirma-light.woff") format("woff");
+}
+
+:root {
+    --lenkie-widget-primary: #1a2d5b;
+    --lenkie-widget-secondary: #F5A623;
+    --lenkie-widget-border-bottom-color: #f5a623a1;
+    --lenkie-font: "BR Firma Light";
+    --lenkie-font-medium: "BR Firma Medium";
+    --lenkie-font-semibold: "BR Firma SemiBold";
+    --lenkie-font-bold: "BR Firma Bold";
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.lenkie-cta-link,
+.lenkie-cta-link>span {
+    color: var(--lenkie-widget-secondary);
+}
+
+.lenkie-top-banner {
+    background: var(--lenkie-widget-primary);
+    height: auto;
+    padding: 1rem;
+    color: white;
+    font-family: "BR Firma Light";
+    position: relative;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+}
+
+.lenkie-top-banner * {
+    font-family: "BR Firma Light" !important;
+}
+
+.lenkie-top-banner p.text {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.lenkie-top-banner p.text>span {
+    padding: 0.25rem 0.5rem;
+    color: var(--lenkie-widget-primary);
+    margin-right: 0.5rem;
+    font-weight: 700;
+    font-family: "BR Firma Bold";
+}
+
+.lenkie-top-banner p.text>a {
+    cursor: pointer;
+    border-bottom: 2px solid var(--lenkie-widget-border-bottom-color);
+}
+
+#lenkie-top-banner-close {
+    position: absolute;
+    right: 1rem;
+    top: 1.25rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-transform: lowercase;
+}
+
+#lenkie-widget__content {
+    background: var(--lenkie-widget-primary);
+    width: 100%;
+    position: relative;
+    padding: 2rem;
+    overflow: auto;
+}
+
+.lenkie-close-button,
+.lenkie-back-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    transition-duration: 0.3s;
+    transition-property: background-color, border-color, color, fill, stroke;
+    cursor: pointer;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 9999px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+
+p.widget-stage-two__desc>p {
+    font-size: 14px;
+}
+
+.lenkie-back-button {
+    left: 1rem;
+}
+
+.lenkie-close-button>svg,
+.lenkie-back-button>svg {
+    height: 0.875rem;
+    width: 0.875rem;
+}
+
+.lenkie-close-button:hover,
+.lenkie-back-button:hover {
+    background: rgba(156, 163, 175, 1);
+}
+
+.lenkie-widget-initial__content {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    color: white;
+    height: 100%;
+}
+
+.lenkie-logo-wrapper {
+    display: grid;
+    justify-content: center;
+}
+
+.lenkie-logo {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.lenkie-logo-desc {
+    color: white;
+    font-family: var(--lenkie-font) !important;
+    font-size: 0.7rem;
+    margin-top: 0.3px;
+}
+
+.widget-content__wrapper {
+    margin-top: 3rem;
+}
+
+.widget-content__item,
+.widget-content__item-three {
+    display: flex;
+    column-gap: 1rem;
+    -moz-column-gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.widget-content__item-three {
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.widget-content__item-icon>svg {
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+.widget-content__item-label {
+    font-size: 0.8rem;
+    font-family: var(--lenkie-font) !important;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.widget-content__item-desc {
+    font-size: 0.7rem;
+    font-family: var(--lenkie-font) !important;
+    margin-top: 0.4rem;
+}
+
+#widget-content__footer {
+    text-align: center;
+    height: auto;
+    /* position: absolute; */
+    width: auto;
+    /* bottom: 4rem; */
+}
+
+.widget-content__tc,
+.widget-content__tc a {
+    color: white;
+    font-family: var(--lenkie-font) !important;
+    font-size: 0.7rem;
+    text-align: center;
+    opacity: 0.7;
+}
+
+#widget-content__footer-button {
+    margin: 0.5rem auto 0;
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: var(--lenkie-font-medium) !important;
+    border: none;
+    cursor: pointer;
+}
+
+#widget-stage-three__content>#widget-content__footer {
+    margin-top: 2rem;
+}
+
+#widget-content__footer-button-2 {
+    margin: 0rem auto 0;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: var(--lenkie-font) !important;
+    border: none;
+    cursor: pointer;
+    background: var(--lenkie-widget-primary);
+    color: white;
+}
+
+#widget-stage-two__content {
+    position: relative;
+}
+
+.widget-stage-two__title,
+.widget-stage-two__desc,
+.widget-stage-three__title,
+.widget-stage-three__desc {
+    color: var(--lenkie-widget-primary);
+}
+
+.widget-stage-two__title,
+.widget-stage-three__title {
+    font-family: var(--lenkie-font-medium) !important;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.widget-stage-two__desc {
+    font-family: var(--lenkie-font) !important;
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.widget-stage__wrapper {
+    margin-top: 2rem;
+    /* margin-bottom: 2rem; */
+    color: var(--lenkie-widget-primary);
+}
+
+.widget-stage-two__item {
+    color: var(--lenkie-widget-primary);
+    font-family: var(--lenkie-font) !important;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 7fr 2fr;
+    align-items: center;
+    grid-gap: 1rem;
+}
+
+.widget-stage-two__item-link {
+    cursor: pointer;
+    color: #9ca3af;
+}
+
+.widget-stage-two__item-link:hover {
+    color: #1a2d5b;
+}
+
+.widget-stage-two__item-label {
+    margin: 0 auto;
+    font-size: 0.7rem;
+    font-family: var(--lenkie-font) !important;
+    color: var(--lenkie-widget-primary);
+}
+
+.widget-stage-two__item-tpa,
+.widget-stage-two__item-rrr,
+.widget-stage-two__item-car,
+.widget-stage-two__item-ta {
+    font-size: 0.8rem;
+    font-family: var(--lenkie-font-semibold) !important;
+}
+
+.widget-stage-offer-display {
+    display: grid;
+    padding: 1rem;
+    text-align: center;
+    background: #EBEDF5;
+    border-radius: 16px;
+}
+
+.widget-stage-three__title {
+    font-family: var(--lenkie-font) !important;
+}
+
+.widget-stage-three__desc {
+    color: var(--lenkie-widget-primary);
+    font-family: var(--lenkie-font) !important;
+    font-size: 0.7rem;
+    margin-top: 0.3px;
+    text-align: center;
+}
+
+.widget-stage-three__desc-text {
+    color: var(--lenkie-widget-primary);
+    font-family: var(--lenkie-font) !important;
+    font-size: 0.8rem;
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+}
+
+.widget-stage-offer-display .widget-stage-two__item-tpa {
+    font-size: 3rem;
+}
+
+#widget-content__divider {
+    background: var(--lenkie-widget-primary);
+    height: 0.09rem;
+    width: 80%;
+    margin: 0 auto;
+    opacity: 0.2;
+}
+
+.widget-content__item .connected {
+    color: var(--lenkie-widget-primary) !important;
+}
+
+.widget-content__item .not-connected {
+    color: #6B7280 !important;
+}
+
+.not-interested {
+    color: var(--lenkie-widget-primary);
+    font-size: 0.75rem;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 1rem;
+    background: transparent;
+    border: 0;
+    font-family: var(--lenkie-font) !important;
+    border-bottom: 2px solid #1a2d5b29;
+}
+
+.hide {
+    display: none !important;
+    transition-duration: 0.3s;
+    transition-property: all;
+}
+
+#lenkie-widget__content input[type='checkbox'] {
+    cursor: pointer;
+}
+
+#lenkie-widget__content input[type='checkbox']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    top: -3px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+#lenkie-widget__content input[type='checkbox']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    top: -3px;
+    left: -1px;
+    position: relative;
+    background-color: var(--lenkie-widget-primary);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+#widget-content__na-other-option {
+    border: 0;
+    width: 100%;
+    border-radius: 5px;
+    /* background: rgba(220, 220, 220, 0.45); */
+    background: #1a2d5b08;
+    border: 1px solid rgba(181, 181, 182, 0.21);
+    box-sizing: border-box;
+    border-radius: 8px;
+    resize: none;
+    padding: 1rem;
+    font-family: var(--lenkie-font);
+}
+
+@media (min-width: 640px) {
+    #lenkie-widget__content {
+        /* height: 38.75rem; */
+        max-width: 24rem;
+        border-radius: 2rem;
+    }
+    .lenkie-close-button,
+    .lenkie-back-button {
+        position: absolute;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    #lenkie-arrow {
+        display: none;
+    }
+}
